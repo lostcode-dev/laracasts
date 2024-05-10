@@ -22,17 +22,21 @@
 
         <?php
         $books = [
-            'Do Andriods Dream of Electric Sheep',
-            'The langoliers',
-            'Hail Mary'
+            [
+                'name' => 'Do Andriods Dream of Electric Sheep',
+                'author' => 'Philip K. Dick',
+                'purchaseUrl' => 'http://example.com',
+            ],
+            [
+                'name' => 'The langoliers',
+                'author' => 'Andy Weir',
+                'purchaseUrl' => 'http://example.com',
+            ],
         ]
         ?>
         <ul>
-            <?php foreach ($books as $book) {
-                echo "<li>$book</li>";
-            } ?>
-            <?php foreach ($books as $book) : ?>
-                <li><?= $book ?></li>
+            <?php foreach ($books as $book): ?>
+                <li><?= $book['name'] ?> - <?= $book['author'] ?></li>
             <?php endforeach ?>
         </ul>
     </div>

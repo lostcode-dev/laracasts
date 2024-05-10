@@ -9,7 +9,8 @@
 
 <body>
     <h1><?php
-        print "Hello, " . "World"
+        $greeting = "Hello";
+        print "$greeting World!"
         ?></h1>
 </body>
 

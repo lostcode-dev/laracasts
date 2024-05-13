@@ -4,7 +4,7 @@ class Validator
 {
     public static function required($value)
     {
-        return !empty(trim($value));
+        return empty(trim($value));
     }
 
     public static function moreThan($value, $min)
